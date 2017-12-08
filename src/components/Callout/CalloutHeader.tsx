@@ -10,7 +10,7 @@ export { CalloutHeaderProps };
 /**
  * Header of a `Callout` component. Used to maintain a consistent layout.
  */
-export default class CalloutHeader extends React.PureComponent<CalloutHeaderProps, {}> {
+export default class CalloutHeader extends React.Component<CalloutHeaderProps, {}> {
   render() {
     const { className, children } = this.props;
 

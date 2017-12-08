@@ -82,7 +82,7 @@ export { DirectionalHint };
  * mouse enter, and closes on mouse out and `ESC`. It should be used with `CalloutHeader` and
  * `CalloutBody` components for consistent layouts.
  */
-export default class Callout extends React.PureComponent<CalloutProps, CalloutState> {
+export default class Callout extends React.Component<CalloutProps, CalloutState> {
   static defaultProps: Partial<CalloutProps> = {
     directionalHint: DirectionalHint.bottomCenter,
     isBeakVisible: true,

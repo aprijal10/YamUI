@@ -10,7 +10,7 @@ export { CalloutBodyProps };
 /**
  * Body of a `Callout` component. Used to maintain a consistent layout.
  */
-export default class CalloutBody extends React.PureComponent<CalloutBodyProps, {}> {
+export default class CalloutBody extends React.Component<CalloutBodyProps, {}> {
   render() {
     const { className, children } = this.props;
 
