@@ -31,6 +31,12 @@ export interface ClickableProps extends NestableBaseComponentProps {
    * Click callback handler.
    */
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+
+
+  /**
+   * Hover callback handler.
+   */
+  onHover?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 /**
@@ -40,7 +46,7 @@ export interface ClickableProps extends NestableBaseComponentProps {
  */
 export default class Clickable extends React.PureComponent<ClickableProps, {}> {
   render() {
-    const { ariaLabel, title, unstyled, onClick, children } = this.props;
+    const { ariaLabel, title, unstyled, onClick, onHover, children } = this.props;
 
     return (
       <button
@@ -49,6 +55,7 @@ export default class Clickable extends React.PureComponent<ClickableProps, {}> {
         title={title}
         onClick={onClick}
         type="button"
+        onMouseOver={onHover}
       >
         {unstyled ? children : <FakeLink>{children}</FakeLink>}
       </button>

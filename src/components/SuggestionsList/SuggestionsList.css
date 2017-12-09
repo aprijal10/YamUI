@@ -1,0 +1,14 @@
+/*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
+@import "src/css/variables/colors.css";
+
+.y-suggestions-list {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  width: 280px;
+  position: absolute;
+}
+
+.y-suggestions-list--group-header,
+.y-suggestions-list--results {
+  border-bottom: 1px solid $borderColor__tertiary;
+}
